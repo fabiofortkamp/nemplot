@@ -53,6 +53,23 @@ def refine_yticks(ax,factor):
     """
 
     ax.set_yticks(refine_list(ax.get_yticks(),factor),minor=True)
+
+def refine_xticks(ax,factor):
+    """
+    Take an Axis object 'ax' and refine the x-ticks on it by 'factor'
+    
+    Parameters
+    ----------
+    ax : matplotlib.pyplot.Axex.Axis() object 
+    factor: int
+
+    Returns
+    -------
+    out : None 
+
+    """
+
+    ax.set_xticks(refine_list(ax.get_xticks(),factor),minor=True)
     
 
 def create_plot(xlabel="",
