@@ -27,7 +27,7 @@ def refine_list(original_list, factor):
     # the limit values, plus one aditional
     n_refined = ((max_value - min_value) / d_refined) + 1
         
-    return np.linspace(min_value,max_value,n_refined)
+    return np.linspace(min_value,max_value,int(n_refined))
 
 def set_all_fontsizes_from_axis(ax):
     

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='nemplot',
-    version='0.1',
+    version='0.1.1',
     packages=['nemplot'],
     description='Easier creation of matplotlib plots with standard formatting',
     license=open('LICENSE.md').read(),
