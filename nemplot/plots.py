@@ -37,6 +37,24 @@ def set_all_fontsizes_from_axis(ax):
             
         item.set_fontsize(nemplot_parameters["FONTSIZE"])
 
+def refine_yticks(ax,factor):
+    """
+    Take an Axis object 'ax' and refine the y-ticks on it by 'factor'
+    
+    Parameters
+    ----------
+    ax : matplotlib.pyplot.Axex.Axis() object 
+    factor: int
+
+    Returns
+    -------
+    out : None 
+
+    """
+
+    ax.set_yticks(refine_list(ax.get_yticks(),factor),minor=True)
+    
+
 def create_plot(xlabel="",
                      ylabel="",
                      title=""):
