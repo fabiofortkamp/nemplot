@@ -58,7 +58,8 @@ def update_latex_parameters():
                       'font.family': 'serif',
                       'font.serif': nemplot_parameters["LATEX_FONT"],
                       'text.latex.preamble': [r'\usepackage{engsymbols}',
-                                              r'\usepackage{magref}']}
+                                              r'\usepackage{magref}',
+                                              r'\usepackage{nicefrac}']}
     matplotlib.rcParams.update(mpl_params)
 
 def set_latex_font(fontname):
